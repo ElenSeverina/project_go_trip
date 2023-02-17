@@ -9,5 +9,6 @@ module.exports = {
     'no-console': 0,
     'no-continue': 0,
     'func-names': 0,
+    'linebreak-style': 0,
   },
-}
+};
