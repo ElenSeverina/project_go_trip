@@ -4,7 +4,7 @@ body {
 
 header {
   background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 63% 96%, 55% 99%, 51% 100%, 49% 100%, 45% 99%, 39% 97%, 0 80%)
+  clip-path: polygon(50% 0%,100.00% 0.00%,100.00% 82.05%,66.30% 95.51%,62.22% 97.01%,58.26% 98.40%,54.12% 99.30%,52.12% 99.40%,50.12% 99.30%,46.19% 98.40%,41.98% 97.01%,37.75% 95.41%,0.00% 82.05%,0.00% 0.00%);
 }
 
 .padding {
@@ -195,13 +195,30 @@ h6 {
   opacity: 0.5;
 }
 
-.stars {
+.rating {
   padding-top: 30px;
-  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row-reverse;
 }
 
-.grey {
-  filter: grayscale(1);
+.rating-item {
+  color: #C4C4C4;
+  cursor: pointer;
+  font-size: 59px;
+  transition: .2s;
+}
+
+.rating-item:hover,
+.rating-item:hover ~ .rating-item {
+  color: #FFD336;
+}
+
+.rating[data-total-value="1"] .rating-item:nth-child(n + 5),
+.rating[data-total-value="2"] .rating-item:nth-child(n + 4),
+.rating[data-total-value="3"] .rating-item:nth-child(n + 3),
+.rating[data-total-value="4"] .rating-item:nth-child(n + 2),
+.rating[data-total-value="5"] .rating-item:nth-child(n + 1) {
+  color: #FFD336;
 }
 
 .exploring {
