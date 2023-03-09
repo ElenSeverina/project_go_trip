@@ -9,6 +9,7 @@
     <title>Explore the nature of Halmahera</title>
     <link rel="icon" href="./icons/icon-trees.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/page.css" />
@@ -19,9 +20,6 @@
       <div class="padding">
         <div class="menu">
           <div class="logo">GoTrip</div>
-          <div class="burger" id="burger">
-            <span></span>
-          </div>
           <div class="burger-menu">
             <nav class="navigation">
               <a href="#">Home</a>
@@ -29,10 +27,13 @@
               <a href="#">Pricing</a>
               <a href="#">Contact</a>
             </nav>
-            <div class="login">
-              <a href="#">Sign up</a>
-              <button class="btn-login" type="button">Login</button>
-            </div>
+          </div>
+          <div class="login">
+            <a href="#">Sign up</a>
+            <button class="btn-login" type="button">Login</button>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
           </div>
         </div>
         <div class="header-content">
@@ -47,7 +48,11 @@
             <button class="btn header-btn" type="button">Exsplore Now</button>
           </div>
           <div class="content-img">
+            <img src="./icons/header/vector.png" alt="vector" class="vector one">
+            <img src="./icons/header/vector.png" alt="vector" class="vector two">
             <img src="./img/header/girl-image.png" alt="girl" />
+            <img src="./icons/header/vector.png" alt="vector" class="vector three">
+            <img src="./icons/header/vector.png" alt="vector" class="vector four">
           </div>
         </div>
       </div>
@@ -64,19 +69,18 @@
           <button class="btn choice-btn" type="button">Exsplore Now</button>
         </div>
         <div class="choice-slider">
-          <div>
-            <button class="btn controler" type="button"><i class="arrow"></i></button>
-          </div>
+          <button class="btn controler left" type="button"><i class="arrow left"></i></button>
           <div class="slider-items">
-            <img class="slide" src="./img/main/forest-road.png" alt="forest-road" />
-            <img class="slide" src="./img/main/person-on-road.png" alt="person-on-road" />
-            <img class="slide" src="./img/main/forest-road.png" alt="forest-road" />
+            <div class="carousel">
+              <img class="slide" src="./img/main/forest-road.png" alt="forest-road" />
+              <img class="slide" src="./img/main/person-on-road.png" alt="person-on-road" />
+              <img class="slide" src="./img/main/forest-road.png" alt="forest-road" />
+            </div>
           </div>
-          <div>
-            <button class="btn controler right" type="button"><i class="arrow"></i></button>
-          </div>
+          <button class="btn controler right" type="button"><i class="arrow right"></i></button>
         </div>
       </section>
+
       <section class="customs-review padding">
         <div class="review-img">
           <img src="./img/main/person-with-map.png" alt="person-with-map" />
@@ -105,8 +109,10 @@
           </div>
         </div>
       </section>
+
       <section class="exploring padding">
         <div class="exploring-content ">
+          <img src="./icons/main/purple-points.png" alt="dots" class="dots">
           <h3 class="exploring-title">
             Prepare Yourself And <br />Start Exploring With Us.
           </h3>
@@ -114,8 +120,10 @@
             There's the best discount for you today.
           </div>
           <button class="btn exploring-btn" type="button">Get Started</button>
+          <img src="./icons/main/purple-points.png" alt="dots" class="dots">
         </div>
       </section>
+
       <section class="subscribe padding">
         <h2>Subscribe <br />To Our Newsletter</h2>
         <form action="#">
@@ -134,7 +142,7 @@
           <a class="footer-a" href="#">Pricing</a>
           <a class="footer-a" href="#">Contact</a>
         </nav>
-        <div class="login">
+        <div class="login footer">
           <a class="footer-a" href="#">Sign up</a>
           <button class="btn-login" type="button">Login</button>
         </div>

@@ -2,6 +2,12 @@ body {
   padding-bottom: 74px;
 }
 
+@media (max-width: 992px) {
+  body {
+    padding-bottom: 40px;
+  }
+}
+
 header {
   background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%);
   clip-path: polygon(50% 0%,100.00% 0.00%,100.00% 82.05%,66.30% 95.51%,62.22% 97.01%,58.26% 98.40%,54.12% 99.30%,52.12% 99.40%,50.12% 99.30%,46.19% 98.40%,41.98% 97.01%,37.75% 95.41%,0.00% 82.05%,0.00% 0.00%);
@@ -54,7 +60,6 @@ header {
   font-size: 0.8rem;
   line-height: 0.8rem;
   width: 93px;
-  padding-right: 100px;
 }
 
 @media (max-width: 992px) {
@@ -63,7 +68,7 @@ header {
 }
 
 .burger-menu {
-  width: 910px;
+  max-width: 910px;
   display: flex;
   justify-content: space-between;
 }
@@ -87,6 +92,15 @@ nav {
   }
 }
 
+@media (max-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100px;
+  }
+}
+
 .login {
   width: 210px;
   display: flex;
@@ -98,6 +112,15 @@ nav {
 @media (max-width: 992px) {
   .login {
     width: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  .login {
+    padding-right: 60px;
+  }
+  .login a{
+    color: #FFFFFF;
   }
 }
 
@@ -118,6 +141,17 @@ nav {
   }
 }
 
+@media (max-width: 767px) {
+  .btn-login {
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    line-height: 0.3rem;
+    font-weight: 400;
+  }
+}
+
 .burger {
   display: none;
 }
@@ -125,7 +159,8 @@ nav {
 @media (max-width: 767px) {
   .burger {
     display: block;
-    position: relative;
+    position: absolute;
+    right: 30px;
     width: 30px;
     height: 20px;
   }
@@ -146,27 +181,32 @@ nav {
     height: 2px;
     transition: all 0.3s ease 0s;
   }
+
   .burger:after {
     bottom: 0;
   }
+
   .burger.active:before {
     transform:rotate(45deg);
     top: 9px;
   }
+
   .burger.active:after {
     transform:rotate(-45deg);
     bottom: 9px;
   }
+
   .burger.active span {
     transform: scale(0);
   }
+
   .burger-menu {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     position: fixed;
     top: -230px;
-    width: 100%;
+    width: 320px;
     left: 0;
     height: 200px;
     background-color: rgb(159, 202, 163);
@@ -174,35 +214,15 @@ nav {
     padding: 30px 0 0 20px;
     transition: all 0.3s ease 0s;
   }
+
   .burger-menu.active {
     top: 85px;
   }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    width: 100px;
-  }
+  
   a {
     color: #0d0e0d;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 0.7rem;
-  }
-  .login {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    padding-top: 20px;
-    height: 55px;
-    padding-left: 0;
-  }
-  .btn-login {
-    width: 70px;
-    height: 25px;
-    border-radius: 10px;
-    font-size: 0.5rem;
-    line-height: 0.3rem;
-    font-weight: 400;
   }
 }
 
@@ -211,19 +231,6 @@ nav {
   display: flex;
   justify-content: space-between;
   position: relative;
-}
-
-.header-content:before {
-  content: url('../icons/header/vector.png');
-  position: absolute;
-  top: 728px;
-  left: 612px;
-}
-.header-content:after {
-  content: url('../icons/header/vector.png');
-  position: absolute;
-  top: 738px;
-  left: 695px;
 }
 
 @media (max-width: 767px) {
@@ -239,19 +246,6 @@ nav {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.content-text:before {
-  content: url('../icons/header/vector.png');
-  position: absolute;
-  top: 147px;
-  left: 1092px;
-}
-.content-text:after {
-  content: url('../icons/header/vector.png');
-  position: absolute;
-  top: 160px;
-  left: 1165px;
 }
 
 @media (max-width: 767px) {
@@ -302,19 +296,6 @@ h1 {
   max-height: 249px;
   padding-bottom: 30px;
   position: relative;
-}
-
-h1:before {
-  content: url('');
-  position: absolute;
-  top: 88px;
-  left: 605px;
-}
-h1:after {
-  content: url('../icons/header/green-points-icon.png');
-  position: absolute;
-  top: 615px;
-  left: 1229px;
 }
 
 @media (max-width: 1075px) {
@@ -405,6 +386,39 @@ h1:after {
   position: relative;
 }
 
+.one {
+  position: absolute;
+  top: 86px;
+  left: 549px;
+}
+
+.two {
+  position: absolute;
+  top: 75px;
+  left: 468px;
+}
+
+.three {
+  position: absolute;
+  top: 700px;
+  right: 540px;
+}
+
+.four {
+  position: absolute;
+  top: 715px;
+  right: 460px;
+}
+
+@media (max-width: 1439px) {
+  .one,
+  .two,
+  .three, 
+  .four {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .content-img {
     display: none;
@@ -422,12 +436,11 @@ h1:after {
   height: 456px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .choice {
     flex-direction: column;
     align-items: center;
-    height: 900px;
-    width: 100%;
+    height: 800px;
   }
 }
 
@@ -436,7 +449,7 @@ h1:after {
   max-width: 456px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .choice-content {
     width: 100%;
     display: flex;
@@ -489,22 +502,48 @@ h1:after {
   }
 }
 
+.choice-slider {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding-left: 49px;
+}
+
+@media (max-width: 1024px) {
+  .choice-slider {
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+  }
+}
+
+i {
+  border: solid #FFFFFF;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  padding: 3px;
+  transform: rotate(135deg);
+}
+
 .controler {
+  background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+  border: solid #ffff;
+  border-width: 1px;
   position: absolute;
-  top: 190px;
-  left: 15px;
   cursor: pointer;
   border-radius: 50px;
   width: 68px;
   height: 68px;
+  text-align: center;
+  bottom: 200px
 }
 
-i {
-  border: solid #ffff;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 5px;
-  transform: rotate(135deg);
+@media (max-width: 1024px) {
+  .controler {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .controler:hover {
@@ -518,29 +557,13 @@ i {
   text-shadow: 1px 1px 2px #427388;
 }
 
-.choice-slider {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-  padding-left: 49px;
+.controler.left {
+  left: 10px;
 }
 
-@media (max-width: 992px) {
-  .choice-slider {
-    max-width: 100%;
-    padding-left: 0;
-  }
-}
-
-.slider-items {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: 992px) {
-  .slider-items {
-    padding: 0 60px;
+@media (max-width: 1024px) {
+  .controler.left {
+    left: 10px;
   }
 }
 
@@ -548,13 +571,67 @@ i {
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .controler.right {
     display: block;
-    left: 700px;
+    left: 710px;
   }
   .controler.right i {
     transform: rotate(-40deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .controler.right {
+    left: 320px;
+  }
+}
+
+.carousel{
+  margin-top: 28px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media (max-width: 1240px) {
+  .carousel {
+    max-width: 700px
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel {
+    max-width: 360px
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel {
+    max-width: 320px
+  }
+}
+
+.slide {
+  padding-right: 30px;
+  object-fit: cover;
+  width: calc(100% / 2.4);
+}
+
+@media (max-width: 1240px) {
+  .slide {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    width: calc(95% / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .slide {
+    width: calc(100%);
   }
 }
 
@@ -724,23 +801,24 @@ h6 {
   border-radius: 60px;
   padding: 116px 0 115px 0;
 }
-.exploring-content:before {
-  content: url('../icons/main/purple-points.png');
+.exploring-content img:first-child {
   transform:rotate(180deg);
   position: absolute;
-  top: 442px;
-  right: 1097px;
+  left: 74px;
+  bottom: 74px;
 }
-.exploring-content:after {
-  content: url('../icons/main/purple-points.png');
+.exploring-content img:last-child {
   position: absolute;
   top: 74px;
-  left: 1097px;
+  right: 74px;
 }
 
 @media (max-width: 992px) {
   .exploring-content {
     padding: 40px 10px;
+  }
+  .exploring-content img {
+    display: none;
   }
 }
 
@@ -894,5 +972,18 @@ input {
 }
 
 .footer-a {
-  color: #838B89;
+  color: #8a9693;
+}
+
+@media (max-width: 767px) {
+  .login.footer .footer-a {
+    color: #8a9693;
+  }
+}
+
+@media (max-width: 767px) {
+  .login.footer {
+    max-width: 160px;
+    padding-right: 0;
+  }
 }
