@@ -63,9 +63,6 @@ header {
 
 .logo {
   font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 0.8rem;
-  width: 93px;
 }
 
 .navigation {
@@ -111,7 +108,7 @@ header {
   height: 49px;
   border-radius: 100px;
   font-size: 0.6rem;
-  line-height: 0.6rem;
+  line-height: 0.88rem;
 }
 
 .header-content {
@@ -122,38 +119,36 @@ header {
 .content-left {
   padding-top: 56px;
   max-width: 603px;
-  display: flex;
-  flex-direction: column;
 }
 
 img[alt="photographer"] {
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 .content-right {
   position: relative;
 }
 
-img[alt="vector"] {
+img[alt="decoration"] {
   position: absolute;
 }
 
-img[alt="vector"]:first-child {
+img[alt="decoration"]:first-child {
   top: 106px;
   left: 549px;
 }
 
-img[alt="vector"]:nth-child(2) {
+img[alt="decoration"]:nth-child(2) {
   top: 95px;
   left: 468px;
 }
 
-img[alt="vector"]:nth-child(3) {
+img[alt="decoration"]:nth-child(3) {
   top: 700px;
   right: 490px;
 }
 
-img[alt="vector"]:nth-child(4) {
+img[alt="decoration"]:nth-child(4) {
   top: 715px;
   right: 410px;
 }
@@ -163,12 +158,8 @@ img[alt="vector"]:nth-child(4) {
   height: 50px;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 15px;
-  font-size: 0.7rem;
-  line-height: 0.7rem;
-}
-
-h1 {
-  padding-top: 20px;
+  font-size: 0.72rem;
+  line-height: 1.08rem;
 }
 
 .header-subtitle {
@@ -178,26 +169,26 @@ h1 {
 }
 
 .btn-explore-now {
-  font-size: 0.9rem;
-  line-height: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.52rem;
   width: 263px;
   height: 91px;
 }
 
 @media (max-width: 1439px) {
-  img[alt="vector"] {
+  img[alt="decoration"] {
     display: none;
   }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1250px) {
   .content-right {
     display: none;
   }
 
   header {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   .login {
@@ -215,15 +206,18 @@ h1 {
   }
 
   .content-left {
-    align-items: center;
     text-align: center;
+  }
+
+  .header-subtitle {
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 767px) {
   .menu {
     position: relative;
-    padding: 44px 80px 0 30px;
+    padding: 44px 80px 0 40px;
   }
 
   .burger-menu {
@@ -236,15 +230,12 @@ h1 {
 
   .navigation {
     position: absolute;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
     top: -230px;
     width: 200px;
-    left: 0;
     height: 180px;
     background-color: rgb(159, 202, 163);
-    padding: 20px 0 0 20px;
+    padding: 20px 0 20px 20px;
     transition: all 0.3s ease 0s;
   }
 
@@ -270,5 +261,6 @@ h1 {
   .btn-explore-now {
     width: 180px;
     height: 60px;
+    font-size: 0.8rem;
   }
 }

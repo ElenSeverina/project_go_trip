@@ -4,7 +4,6 @@ html {
   background: #E5E5E5;
   font-weight: 400;
   font-size: 25px;
-  line-height: 38px;
   color: #FFFFFF;
 }
 
@@ -17,7 +16,7 @@ a {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 0.6rem;
-  line-height: 0.6rem;
+  line-height: 0.88rem;
   padding-bottom: 5px;
   position: relative;
 }
@@ -31,7 +30,6 @@ button {
   border-radius: 27px;
   font-weight: 500;
   font-size: 0.8rem;
-  line-height: 0.8rem;
   width: 223px;
   height: 79px;
   color: #FFFFFF;
@@ -47,15 +45,16 @@ button:active {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: 3.2rem;
+  line-height: 3.12rem;
+  padding-top: 20px;
 }
 
 .text {
   opacity: 0.5;
   color: #0F1F1C;
-  line-height: 1.3rem;
+  line-height: 1.52rem;
 }
 
 h3 {
