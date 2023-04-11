@@ -1,10 +1,16 @@
 html {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   background: #E5E5E5;
   font-weight: 400;
   font-size: 25px;
   color: #FFFFFF;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 
 body {
@@ -30,6 +36,7 @@ button {
   border-radius: 27px;
   font-weight: 500;
   font-size: 0.8rem;
+  line-height: 1.2rem;
   width: 223px;
   height: 79px;
   color: #FFFFFF;
@@ -58,16 +65,16 @@ h1 {
 }
 
 h3 {
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.8rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   color: #0F1F1C;
 }
 
 h6 {
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.3rem;
+  font-size: 1.32rem;
+  line-height: 2rem;
   color: #0F1F1C;
 }
 
@@ -76,4 +83,8 @@ h2 {
   font-size: 2rem;
   line-height: 3.2rem;
   color: #0F1F1C;
+}
+
+.padding {
+  padding: 0 100px 0 100px;
 }
