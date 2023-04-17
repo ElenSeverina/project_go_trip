@@ -189,7 +189,6 @@ img[alt="decoration"]:nth-child(4) {
 .choice {
   padding-top: 86px;
   display: flex;
-  overflow: hidden;
 }
 
 .choice-content {
@@ -197,7 +196,7 @@ img[alt="decoration"]:nth-child(4) {
   min-width: 456px;
 }
 
-.choice-title-bigger {
+.choice-title-big {
   font-size: 2.2rem;
   line-height: 3.28rem;
 }
@@ -243,6 +242,8 @@ img[alt="decoration"]:nth-child(4) {
 
 .slider-items {
   display: flex;
+  overflow: hidden;
+  max-width: 835px;
 }
 
 .slide {
@@ -355,26 +356,37 @@ h6 {
   }
 
   .choice-slider {
-    padding: 100px 140px;
+    padding: 80px 0;
+    margin: 0 auto;
   }
 
+  .slider-items {
+    padding: 0 35px 0;
+  }
+
+  .slide:first-child {
+    padding-left: 15px;
+  }
+  
   .slide {
-    max-width: 400px;
-    max-height: 335px;
-    padding: 0 15px 0;
+    max-width: 380px;
+    max-height: 315px;
+    padding-right: 15px;
   }
 
   .btn-controler {
-    bottom: 230px;
+    bottom: 220px;
+    width: 48px;
+    height: 48px;
   }
 
   .btn-controler.left {
-    left: 80px;
+    left: -10px;
   }
 
   .btn-controler.right {
     display: block;
-    left: 1060px;
+    left: 880px;
   }
 
   .customs-review .content-left {
@@ -392,6 +404,43 @@ h6 {
 
   .customs-review .content-right h3 {
     text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .choice-slider {
+    max-width: 600px;
+  }
+
+  .slide:first-child {
+    padding-left: 20px;
+  }
+
+  .slide {
+    max-width: 345px;
+    max-height: 280px;
+    padding: 0 20px 0;
+  }
+
+  .btn-controler.left {
+    left: 10px;
+  }
+
+  .btn-controler.right {
+    left: 570px;
+  }
+
+  .btn-controler {
+    bottom: 200px;
+    width: 37px;
+    height: 37px;
+  }
+
+  .btn-controler i {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    padding: 2px;
+    margin-bottom: 2px;
   }
 }
 
@@ -450,9 +499,30 @@ h6 {
     font-size: 1.6rem;
   }
 
-  .choice-title-bigger {
-    font-size: 1.8rem;
+  .choice-title-big {
+    font-size: 1.6rem;
     line-height: 2.6rem;
+  }
+
+  .choice-slider {
+    max-width: 310px;
+  }
+
+  .slide:first-child {
+  padding-left: 20px;
+  }
+
+  .btn-controler.left {
+    left: 10px;
+  }
+
+  .btn-controler.right {
+    left: 278px;
+  }
+
+  .slide {
+    max-width: 325px;
+    max-height: 260px;
   }
 
   .user img {
