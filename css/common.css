@@ -20,6 +20,12 @@ html {
   padding-bottom: 74px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding-bottom: 34px;
+  }
+}
+
 a {
   text-decoration: none;
   color: #FFFFFF;
