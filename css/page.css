@@ -1,7 +1,3 @@
-body {
-  padding-bottom: 74px;
-}
-
 header {
   background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%);
   clip-path: polygon(
@@ -346,10 +342,11 @@ h6 {
 .exploring-content h3 {
   font-size: 1.8rem;
   line-height: 2.72rem;
+  padding: 0 30px;
 }
 
 .text.exploring {
-  padding: 30px 0 60px 0;
+  padding: 30px 30px 60px;
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
@@ -378,13 +375,13 @@ input {
   line-height: 1.44rem;
   opacity: 0.5;
   outline: none;
-  padding: 0 130px 0 46px;
+  padding: 0 130px 0 20px;
 }
 
 .btn-subscribe {
   width: 300px;
   height: 105px;
-  margin: 12px 15px 12px 0;
+  margin: 12px 20px 12px 0;
 }
 
 .footer-menu {
@@ -399,8 +396,8 @@ input {
   color: #8a9693;
 }
 
-.footer-menu a:before {
-  display: none;
+.footer-menu a:first-child:before {
+  background: #8a9693;
 }
 
 @media (max-width: 1439px) {
@@ -504,16 +501,11 @@ input {
   .customs-review .content-right h3 {
     text-align: center;
   }
-
-  input {
-    max-width: 250px;
-    padding: 0 60px 0 20px;
-  }
   
   .btn-subscribe {
     width: 180px;
     height: 70px;
-    margin: 30px 0;
+    margin: 30px 20px;
   }
 }
 
@@ -553,6 +545,15 @@ input {
   h2 {
     font-size: 1.9rem;
     line-height: 2.9rem;
+  }
+
+  input {
+    padding-right: 0;
+  }
+
+  .btn-subscribe {
+    width: 160px;
+    height: 60px;
   }
 }
 
@@ -651,7 +652,7 @@ input {
 
   .start-exploring {
     padding-top: 80px;
-}
+  }
 
   .exploring-content h3 {
     font-size: 1.32rem;
@@ -686,6 +687,10 @@ input {
     line-height: 2.2rem;
   }
 
+  form {
+    max-width: 450px;
+  }
+
   input {
     max-width: 200px;
     padding: 0 10px 0 20px;
@@ -714,5 +719,13 @@ input {
     flex-direction: column;
     text-align: center;
     max-width: 200px;
+  }
+
+  .footer-menu .navigation a {
+    padding: 0 0 15px 0;
+  }
+
+  .footer-menu a:first-child:before {
+    display: none;
   }
 }
