@@ -4,6 +4,7 @@ html {
   font-weight: 400;
   font-size: 25px;
   color: #FFFFFF;
+  background: #FFFFFF;
 }
 
 .logo {
@@ -12,7 +13,7 @@ html {
   line-height: 1.2rem;
 }
 
-.container {
+body {
   max-width: 1440px;
   margin: 0 auto;
   background: #E5E5E5;
@@ -21,7 +22,7 @@ html {
 }
 
 @media (max-width: 767px) {
-  .container {
+  body {
     padding-bottom: 34px;
   }
 }
