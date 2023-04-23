@@ -319,14 +319,14 @@ h6 {
 .exploring-content {
   position: relative;
   text-align: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 60px;
   padding: 115px 0;
 }
 
 .exploring-content img:first-child {
   position: absolute;
-  transform:rotate(180deg);
+  transform: rotate(180deg);
   left: 74px;
   bottom: 74px;
 }
@@ -386,11 +386,11 @@ input {
 }
 
 .footer-menu {
-  padding-top: 106px
+  padding-top: 106px;
 }
 
 .footer-menu.logo {
-  color: #FF7C4E;
+  color: #ff7c4e;
 }
 
 .footer-menu a {
@@ -504,11 +504,11 @@ input {
   .customs-review .content-right h3 {
     text-align: center;
   }
-  
+
   input {
-    padding: 0 30px 0 50px
+    padding: 0 30px 0 50px;
   }
-  
+
   .btn-subscribe {
     width: 180px;
     height: 70px;
@@ -555,7 +555,7 @@ input {
   }
 
   input {
-    padding: 0 20px 0 40px
+    padding: 0 20px 0 40px;
   }
 
   .btn-subscribe {
@@ -688,7 +688,7 @@ input {
   .subscribe {
     padding: 60px 40px 0 40px;
   }
-  
+
   h2 {
     font-size: 1.6rem;
     line-height: 2.2rem;
@@ -704,7 +704,7 @@ input {
     line-height: 1.24rem;
     padding: 0 0 0 20px;
   }
-  
+
   .btn-subscribe {
     width: 110px;
     height: 40px;
@@ -718,7 +718,7 @@ input {
   }
 
   .footer-menu a {
-    color: #0F1F1C;
+    color: #0f1f1c;
     opacity: 0.5;
   }
 
