@@ -216,7 +216,7 @@ img[alt=decoration]:nth-child(4) {
   max-width: 380px;
   max-height: 456px;
 }
-.slider-items:first-child img, .slider-items:last-child img {
+.slider-items img:first-child, .slider-items img:last-child {
   max-width: 335px;
   max-height: 402px;
 }
