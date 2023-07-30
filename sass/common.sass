@@ -1,0 +1,90 @@
+$primary-color: #FFFFFF
+$secondary-color: #E5E5E5
+$button-gradient-start: #FF7B4E
+$button-gradient-end: #FF584E
+$button-shadow-start: rgba(77, 6, 6, 0.5)
+$button-shadow-end: rgba(90, 16, 16, 0.2)
+$text-color: #0F1F1C
+
+html
+  box-sizing: border-box
+  font-family: Poppins, sans-serif
+  font-weight: 400
+  font-size: 25px
+  color: $primary-color
+  background: $primary-color
+
+.logo
+  font-weight: 700
+  font-size: 0.8rem
+  line-height: 1.2rem
+
+body
+  max-width: 1440px
+  margin: 0 auto
+  background: $secondary-color
+  border-radius: 50px
+  padding-bottom: 74px
+
+  @media (max-width: 767px)
+    padding-bottom: 34px
+
+a
+  text-decoration: none
+  color: $primary-color
+  font-size: 0.6rem
+  line-height: 0.88rem
+  padding-bottom: 5px
+  position: relative
+
+  &:hover
+    cursor: pointer
+
+button
+  background: linear-gradient(129.54deg, $button-gradient-start 15.57%, $button-gradient-end 95.03%)
+  border-radius: 27px
+  font-weight: 500
+  font-size: 0.8rem
+  line-height: 1.2rem
+  width: 223px
+  height: 79px
+  color: $primary-color
+  cursor: pointer
+
+  &:hover, &:active
+    border: 1px solid
+    box-shadow: inset 0 0 20px 20px $button-shadow-start, 0 0 30px $button-shadow-end
+    outline-color: rgba(27, 21, 21, 0)
+    text-shadow: 1px 1px 2px #427388
+
+h1
+  font-size: 2.2rem
+  font-weight: 600
+  line-height: 3.12rem
+  padding-top: 20px
+
+.text
+  opacity: 0.5
+  color: $text-color
+  line-height: 1.52rem
+
+h3
+  font-weight: 600
+  font-size: 1.2rem
+  line-height: 1.8rem
+  color: $text-color
+
+h6
+  font-weight: 500
+  font-size: 1.32rem
+  line-height: 2rem
+  color: $text-color
+
+h2
+  font-weight: 600
+  font-size: 2.2rem
+  line-height: 3.28rem
+  color: $text-color
+
+.padding
+  padding: 0 100px 0 100px
